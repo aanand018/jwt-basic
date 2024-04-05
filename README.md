@@ -5,9 +5,7 @@ import java.util.Scanner;
 public class NumberToWords {
     private static final String[] units = {"", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten",
             "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen"};
-
     private static final String[] tens = {"", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"};
-
     private static String convert(int n) {
         if (n < 20) {
             return units[n];
