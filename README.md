@@ -29,3 +29,35 @@ public class NumberToWords {
         System.out.println(convert(number));
     }
 }
+
+
+STRING :
+
+  String str1 = "Hello";
+	        String str2 = str1; // str2 points to the same "Hello" string as str1
+	        
+	        System.out.println(str1.hashCode() +" str1: " + str1); // Output: Hello
+	        System.out.println(str2.hashCode() +" str2: " + str2); // Output: Hello
+	        
+	        // Modify str1
+	        str1 = str1 + " World";
+	        
+	        System.out.println("After modification:");
+	        System.out.println(str1.hashCode() +" str1: " + str1); // Output: Hello World
+	        System.out.println(str2.hashCode() +" str2: "  + str2); // Output: Hello
+	        
+	        // str1 now points to a new "Hello World" string, but str2 still points to the original "Hello" string
+	    
+OUTPUT :	
+69609650 str1: Hello
+69609650 str2: Hello
+After modification:
+-862545276 str1: Hello World
+69609650 str2: Hello
+
+
+
+
+
+
+
